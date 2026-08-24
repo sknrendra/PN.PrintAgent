@@ -1,0 +1,7 @@
+schemaVersion: 1
+name: "Zebra ZD220 (CUPS)"
+dpi: 203
+language: zpl
+transport:
+  type: cups
+  queue: "ZTC-ZD220-203dpi-ZPL"

@@ -1,0 +1,7 @@
+schemaVersion: 1
+name: "Zebra ZD220 (Windows print share, same machine as printagent)"
+dpi: 203
+language: zpl
+transport:
+  type: windows
+  share: '\\localhost\ZD220'

@@ -1,0 +1,15 @@
+schemaVersion: 1
+name: "broken template"
+fields:
+  - name: part_number
+    type: text
+    x_mm: 3
+    y_mm: 7
+    height_mm: 5.5
+
+  - name: barcode
+    type: barcode
+    source: does_not_exist
+    x_mm: 3
+    y_mm: 14
+    height_mm: 7

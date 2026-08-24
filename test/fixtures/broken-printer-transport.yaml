@@ -1,0 +1,7 @@
+schemaVersion: 1
+name: "broken printer"
+dpi: 203
+language: zpl
+transport:
+  type: serial
+  device: "/dev/ttyUSB0"

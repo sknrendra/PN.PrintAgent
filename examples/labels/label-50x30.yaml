@@ -1,0 +1,7 @@
+schemaVersion: 1
+name: "50x30mm part-number label"
+width_mm: 50
+height_mm: 30
+margin_mm: 2
+darkness: 15
+speed_ips: 4

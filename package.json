@@ -1,0 +1,40 @@
+{
+  "name": "printagent",
+  "version": "0.1.0",
+  "description": "CLI for printing part-number labels to ZPL-compatible thermal printers over pluggable transports",
+  "type": "module",
+  "bin": {
+    "printagent": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:exe": "bun build ./src/cli.ts --compile --target=bun-windows-x64 --outfile dist-exe/printagent.exe",
+    "typecheck": "tsc --noEmit -p tsconfig.test.json",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "yaml": "^2.5.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/node": "^22.7.4",
+    "eslint": "^9.11.1",
+    "typescript-eslint": "^8.8.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
